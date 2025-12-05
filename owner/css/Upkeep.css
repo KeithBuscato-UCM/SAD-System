@@ -1,0 +1,246 @@
+
+@font-face {
+    font-family: 'Outfit';
+    src:url(../font/OutfitRegular.ttf);
+}
+
+body {
+    font-family: 'Outfit';
+    background: #EEE8DF;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2C365A;
+    padding: 18px 40px;
+    color: #D9D9D9;
+}
+
+.nav-btn {
+    background: #D9D9D9;
+    margin: 5px;
+    padding: 10px 25px;
+    color: #2C365A;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.nav-btn1 {
+    background: #2C365A;
+    margin: 5px;
+    padding: 10px 25px;
+    color: #D9D9D9;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.container {
+    padding: 35px 50px;
+}
+
+.box {
+    background: #D9D9D9;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}
+
+.top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+    border-radius: 20px;
+}
+
+.maintenance-box {
+    flex: 3;
+    background: #D9D9D9;
+}
+
+.search-wrap input {
+    width: 100%; 
+    max-width: 200px; 
+    padding: 10px 18px;
+    background: #2C365A;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+}
+
+.search-box {
+    flex: 1;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+}
+
+.status-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.status-card {
+    background: #2C365A;
+    width: 23%;
+    padding: 22px 5px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.status-card p {
+    margin: 0;
+}
+
+.count {
+    display: inline-flex;
+    margin-top: 12px;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.yellow { color: #F1A200; }
+.blue { color: #31B3E0; }
+.green { color: #28A745; }
+.red { color: #D7263D; }
+
+.table-section {
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.table-header h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    
+}
+
+.heading-box {
+    display: inline-block;  
+    color: #2C365A;   
+    padding: 6px 14px; 
+    border-radius: 12px;
+    background: #EEE8DF;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+}
+
+.sort {
+    background: #2C365A;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 12px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px; 
+    margin-top: 25px;
+}
+
+thead th {
+    background: #2C365A;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+}
+
+tbody tr {
+    background: #F4F4F4;
+    border-radius: 12px;
+}
+
+tbody td {
+    padding: 18px;
+    font-weight: 600;
+}
+
+.link {
+    color: #1AA34A;
+    font-weight: 800;
+}
+
+.tag {
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    color: white;
+    font-weight: 800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+}
+
+.low { background: #42B9FF; }
+.medium { background: #E48D12; }
+.urgent { background: #E51E18; }
+.completed { background: #07B76C; }
+.pending { background: #E48D12; }
+.in-progress { background: #28A8E0; }
+
+.sort-dropdown {
+    display: flex;
+    align-items: center;
+    background: #2C365A;
+    padding: 10px 22px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 800;
+    gap: 12px;
+}
+
+.sort-dropdown label {
+    font-size: 16px;
+    color: white;
+}
+
+.sort-dropdown select {
+    background: white;
+    color: #2C365A;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.sort-dropdown select:hover {
+    background: #F0F0F0;
+}
+
