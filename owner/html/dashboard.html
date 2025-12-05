@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account Page</title>
+        <link rel="stylesheet" href="../css/dashboard.css">
+        <script src = "../js/floors.js"></script>
+        <script src = "../js/dashboardProfile.js"></script>
+        <script src = "../js/roomfillup.js"></script>
+    </head>
+
+        <body>
+
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="account.html" class="nav-btn active-page">Account</a>
+                </div>
+
+                <!--navigation bars but kanang naay hashtag temporary rana-->
+                <div class="nav-right">
+                    <a href="dashboard.html" class="nav-btn1">Dashboard</a>
+                    <a href="payments.html" class="nav-btn">Payments</a>
+                    <a href="tenants.html" class="nav-btn">Tenants</a>
+                    <a href="Upkeep.html" class="nav-btn">UpKeep</a>
+                    <a href="../../login/html/login.html" class="nav-btn logout">Log-out</a>
+                </div>
+            </nav>
+
+            <div class="main-container">
+                    <div class="top-section">
+                    <div class="tab">Dashboard</div>
+                    <input type="text" class="search" placeholder="Search...">
+                    </div>
+                    
+
+
+                <div class="property-section">
+                    <div class="property-info">
+                        <img src="../img/sad.jpg" class="property-img" alt="Property Image" />
+                        <p><strong>⚲ Address</strong><br>123 A. Kamagasan st. Cebu City, 12345</p>
+                        <p><strong>𓉱 Building Details</strong><br>2 Floors, 20 Rooms, Est. 2014</p>
+                        <p><strong>✆ Contact No.</strong><br>0912 345 6789</p>
+                        <p><strong>✉ Email</strong><br>ExampleDorms@gmail.com</p>
+                    </div>
+
+
+                    <div class="room-stats">
+                        <div class="stat-box">
+                            <h3>Total Rooms</h3>
+                            <span class="stat-number">20</span>
+                        </div>
+                
+                        <div class="stat-box">
+                            <h3>Occupied Rooms</h3>
+                            <span class="stat-number">10</span>
+                        </div>
+                        <div class="stat-box">
+                            <h3>Vacant Rooms</h3>
+                            <span class="stat-number">10</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="room-layout">
+                    <div class="tabs">
+                        <button class="active">Rooms</button>
+                        <button>1st Floor</button>
+                        <button>2nd Floor</button>
+                    </div>
+
+                    <div class="rooms">
+                        <div class="room vacant">Room 101<br><small></small></div>
+                        <div class="room vacant">Room 102<br><small></small></div>
+                        <div class="room vacant">Room 103<br><small></small></div>
+                        <div class="room vacant">Room 104<br><small></small></div>
+                        <div class="room vacant">Room 105<br><small></small></div>
+                        <div class="room vacant">Room 106<br><small></small></div>
+                        <div class="room vacant">Room 107<br><small></small></div>
+                        <div class="room vacant">Room 108<br><small></small></div>
+                        <div class="room vacant">Room 109<br><small></small></div>
+                        <div class="room vacant">Room 110<br><small></small></div>
+                    </div>
+                </div>
+
+
+                <div class="owner-info">
+                    <div class="tabs">
+                        <button class="active">Dorm-Owner Information</button>
+                    </div>
+
+                    <div class="owner-content">
+                        <div class="owner-left">
+                            <div class="profile-photo"></div>
+                            <p><strong>Status:</strong> <span class="active-status">Active</span></p>
+                        </div>
+
+                        <div class="owner-details">
+                            <p><strong>Dorm Owner:</strong> Kim Rangaig</p>
+                            <p><strong>Contact No.:</strong> 0911 222 3333</p>
+                            <p><strong>Email:</strong> kimrang21@gmail.com</p>
+                            <p><strong>Years of Operation:</strong> 12 years</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="roomModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="modalTitle">Room Info</h2>
+                        <form id="roomForm">
+                            <label for="tenantName">Tenant Name:</label>
+                            <input type="text" id="tenantName" name="tenantName" required><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="text" id ="email" name="email" required><br><br>
+
+                            <label for="contact">Contact No.:</label>
+                            <input type="text" id="contact" name="contact" required><br><br>
+
+                            <label class="input-label">Password:</label>
+                            <input type="password" id="password" class="input-field" placeholder="" required><br><br>
+
+                            <label for="status">Status:</label>
+                            <select id="status" name="status" required>
+                                <option value="Occupied">Occupied</option>
+                                <option value="Vacant">Vacant</option>
+                            </select><br><br>
+
+                            <button type="submit">Save</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </body>
+
+    
+    

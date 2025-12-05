@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payments Dashboard</title>
+        <link rel="stylesheet" href="../css/payments.css">
+    </head>
+
+        <body>
+
+                <nav class="navbar">
+                    <div class = "nav-left">
+                        <a href="account.html" class = "nav-btn active-page">Account</a>
+                    </div>
+
+                    <div classs = "nav-right">
+                        <a href="dashboard.html" class ="nav-btn">Dashboard</a>
+                        <a href="payments.html" class ="nav-btn1">Payments</a>
+                        <a href="tenants.html" class ="nav-btn">Tenants</a>
+                        <a href="Upkeep.html" class ="nav-btn">UpKeep</a>
+                        <a href="../../login/html/login.html" class ="nav-btn">Log-out</a>
+                    </div>
+                </nav>
+
+            <div class="page">
+
+                <div class="top-box">
+
+                    <div class="header-row">
+                        <div class="tag">Payment Management</div>
+
+                        <div class="search-wrap">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+
+                    <div class="summary-row">
+
+                        <div class="summary-card">
+                            <p>Total Revenue<br>(this month)</p>
+                            <div class="value green-bg">$2,800</div>
+                        </div>
+
+                        <div class="summary-card">
+                            <p>Pending<br>Payments</p>
+                            <div class="value orange-bg">$1,950</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="table-box">
+
+                    <div class="table-title">Resident Payments</div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Room</th>
+                                <th>Tenant Name</th>
+                                <th>Monthly Rent</th>
+                                <th>Due Date</th>
+                                <th>Last Payment</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>101</td>
+                                <td class="green-text">Sarah Johnson</td>
+                                <td>$450</td>
+                                <td>11-05-25</td>
+                                <td>11-01-25</td>
+                                <td><span class="paid">Paid</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>102</td>
+                                <td class="green-text">Michael Chen</td>
+                                <td>$450</td>
+                                <td>11-05-25</td>
+                                <td>11-02-25</td>
+                                <td><span class="paid">Paid</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>103</td>
+                                <td class="orange-text">Emily Rodriguez</td>
+                                <td>$500</td>
+                                <td>11-05-25</td>
+                                <td>11-03-25</td>
+                                <td><span class="pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>104</td>
+                                <td class="orange-text">David Kim</td>
+                                <td>$450</td>
+                                <td>11-05-25</td>
+                                <td>9-28-25</td>
+                                <td><span class="pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>105</td>
+                                <td class="green-text">Jessica Williams</td>
+                                <td>$500</td>
+                                <td>11-05-25</td>
+                                <td>11-01-25</td>
+                                <td><span class="paid">Paid</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>201</td>
+                                <td class="red-text">Olivia Davis</td>
+                                <td>$500</td>
+                                <td>11-05-25</td>
+                                <td>9-17-25</td>
+                                <td><span class="overdue">Overdue</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>202</td>
+                                <td class="green-text">Matthew Wilson</td>
+                                <td>$450</td>
+                                <td>11-05-25</td>
+                                <td>11-04-25</td>
+                                <td><span class="paid">Paid</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>203</td>
+                                <td class="green-text">Isabella Garcia</td>
+                                <td>$500</td>
+                                <td>11-05-25</td>
+                                <td>11-01-25</td>
+                                <td><span class="paid">Paid</span></td>
+                            </tr>
+
+                            <tr>                    
+                                <td>204</td>
+                                <td class="green-text">Ethan Moore</td>
+                                <td>$450</td>
+                                <td>11-05-25</td>
+                                <td>11-02-25</td>
+                                <td><span class="paid">Paid</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>205</td>
+                                <td class="red-text">Daniel White</td>
+                                <td>$500</td>
+                                <td>11-05-25</td>
+                                <td>9-30-25</td>
+                                <td><span class="overdue">Overdue</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </body>
+</html>
