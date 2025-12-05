@@ -1,0 +1,230 @@
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(../font/OutfitRegular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit';
+    background: #EEE8DF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2C365A;
+    padding: 18px 40px;
+    color: #D9D9D9;
+}
+
+.nav-btn {
+    background: #D9D9D9;
+    margin: 5px;
+    padding: 10px 25px;
+    color: #2C365A;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.nav-btn1 {
+    background: #2C365A;
+    margin: 5px;
+    padding: 10px 25px;
+    color: #D9D9D9;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.container {
+    width: 1150px;
+    margin: 40px auto;
+}
+
+.card {
+    background: #D9D9D9;
+    padding: 50px 28px 28px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.card-header {
+    background: #EEE8DF;
+    color: #2C365A;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+    
+}
+
+.request-row {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.lbl {
+    font-weight: 600;
+}
+
+.issue-block {
+    width: 60%;
+}
+
+.issue-text {
+    width: 100%;
+    height: 130px;
+    background: #2C365A;
+    color: white;
+    padding: 18px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    resize: none;
+}
+
+.priority-block {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.priority-btn {
+    width: 110px;
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.priority-btn.low { background: #31B3E0; }
+.priority-btn.medium { background: #F1A200; }
+.priority-btn.urgent { background: #D7263D; }
+
+.send-btn {
+    background: #1bb76e;
+    border: none;
+    padding: 14px 34px;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
+}
+
+.send-btn:hover {
+    background: #28A745;
+}
+
+.search-box {
+    float: right;
+}
+
+.search-input {
+    background: #2C365A;
+    padding: 12px 22px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    width: 240px;
+}
+
+.summary-row {
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+}
+
+.summary-card {
+    background: #2C365A;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.count {
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+.orange { background: #F1A200; }
+.blue   { background: #31B3E0; }
+.green  { background: #28A745; }
+.red    { background: #D7263D; }
+
+table {
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th {
+    background: #2C365A;
+    color: white;
+    padding: 14px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+td {
+    background: #EEE8DF;
+    padding: 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.tag {
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.tag.low { background: #42B9FF; }
+.tag.medium { background: #E48D12; }
+.tag.urgent { background: #E51E18; }
+
+.status {
+    padding: 6px 14px;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.status.inprogress { background: #42B9FF; }
+.status.pending { background: #E48D12; }
+.status.complete { background: #07B76C; }
+
+.green-text {
+    color: #07B76C;
+    font-weight: 600;
+}
